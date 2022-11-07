@@ -3,7 +3,13 @@ import GetDrills from './getDrills.js'
 import {connect} from 'react-redux'
 class Drills extends React.Component {
   render() {
-    return <GetDrills></GetDrills>
+    return (
+      <div>
+        <GetDrills/>
+      </div>
+    )
+
+      
   }
 }
 const mapStateToProps = state => {

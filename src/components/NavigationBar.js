@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .navbar {
-    background-color: #222;
+    background-color: #25242d;
   }
   a, .navbar-brand, .navbar-nav .nav-link {
     color: #bbb;
@@ -16,14 +16,13 @@ const Styles = styled.div`
     }
   }
 `;
-
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand style={{color: "#ffd11a"}}>Soccster</Navbar.Brand>
+      <Navbar.Brand href="/" style={{color: "white"}}>SH</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto"> 
+      <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
+        <Nav className="ml-auto "> 
           <Nav.Item>
             <Nav.Link>
               <Link to="/drills">Drills</Link>

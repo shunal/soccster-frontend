@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard');
+@import url('https://fonts.googleapis.com/css2?family=Sifon');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather');
+
 .App {
   text-align: center;
+  font-family:Coustard;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +41,64 @@
     transform: rotate(360deg);
   }
 }
+.maindiv {
+
+  background-color: #1e1d24;
+  /* 1. define vertical lines */
+  background-image: linear-gradient(#f58b0a 1px, transparent 1px),
+  /* 2. define horizontal lines */
+  linear-gradient(90deg, #f58b0a 1px, transparent 1px),
+  /* 3. define smaller vertical lines */
+    linear-gradient(black 1px, transparent 1px),
+  /* 4. define smaller horizontal lines */
+    linear-gradient(90deg, black 1px, transparent 1px);
+  /* These set the background sizes for each linear gradient defined*/
+  background-size: 200px 200px, 200px 200px, 20px 20px, 20px 20px;
+  /* This sets the position for each gradient as well*/
+  background-position: 2px 2px, -2px -2px, -1px -1px, -1px -1px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  background-color: black;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 20px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  animation-duration: 3s;
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  div.hide {
+  
+  display: none;
+  
+  }
+  
+  }

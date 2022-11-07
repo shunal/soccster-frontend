@@ -1,22 +1,17 @@
-import React from 'react';
-import { connect } from 'react-redux';
-
-class Home extends React.Component {
-
-  render() {
-    console.log(this.props.drills)
+import React from "react";
+import Introduction from "./Introduction";
+import Skills from "./Skills";
+import Projects from "./Projects";
+function Home() {
     return (
       <div>
-        <h1>Home</h1>
+        <Introduction></Introduction>
+        <Skills></Skills>
+        <Projects></Projects>
       </div>
     )
-      
-  }
+  
 }
-const mapStateToProps = state => {
-  return {
-    drills: state.drills
-  }
-}
- 
-export default connect(mapStateToProps)(Home)
+
+
+export default Home;

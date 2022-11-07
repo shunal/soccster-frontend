@@ -12,7 +12,6 @@ class Searchbar extends React.Component {
 
   mySearchHandler = (event) => {
     this.setState({searchParams: event.target.value})
-    console.log(this.state)
 }
 
 
@@ -21,7 +20,6 @@ class Searchbar extends React.Component {
     return <form onSubmit={this.setRedirect}>
         <input placeholder="Search Drills" type="text" onChange={this.mySearchHandler}></input>
         <button type="submit">
-          {console.log(this.state)}
           Search</button>
     </form>
   }

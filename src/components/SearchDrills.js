@@ -49,10 +49,15 @@ class FilteredDrill extends React.Component {
 
     render(){
       return(
-      <div>
-        <h1 style={{textAlign: "center", padding: "10px"}}>{this.props.title}</h1>
-        <div id={`container${this.props.id}`}></div>
-        <h4 style={{textAlign: "center", padding: "10px"}}>{this.props.description}</h4>
+      <div className="row" style={{backgroundColor:"#1e1d24", paddingTop:"30px"}}>
+        <div className='col'>
+          <div id={`container${this.props.id}`}></div>
+        </div>
+        <div className='col'>
+          <h1 className="text-start" style={{ padding: "0px"}}>{this.props.title}</h1>
+          <h4 className="text-start" style={{ padding: "0px"}}>{this.props.description}</h4>
+        </div>
+        
       </div>
       )
     }
