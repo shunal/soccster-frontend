@@ -4,14 +4,14 @@ import WebDesign from "../web-designwhite.png";
 
 function Skills() {
     return(
-        <div className="container-fluid vh-100" style={{ backgroundColor: "#25242d" }}>
+        <div className="container-fluid" style={{ backgroundColor: "#25242d" }}>
           <div className="row justify-content-center text-center">
             <div className="waviy my-4 py-4 ">
               <span className="align-items-center" style={{color: "#f58b0a" }}>SKILLS</span>
             </div>
           </div>
           <div id="testing" className="row" style={{ backgroundColor: "#25242d" }}>
-            <div className="col-md-4 text-center">
+            <div className="col-md-4 align-text-middle text-center">
               <img
                 src={WebDesign}
                 className="img-fluid"
@@ -26,7 +26,7 @@ function Skills() {
               <p>Bootstrap CSS</p>
               <p>HTML5</p>
             </div>
-            <div className="col-md-4 text-center">
+            <div className="col-md-4 j text-center">
               <img
                 src={Coding}
                 className="img-fluid"

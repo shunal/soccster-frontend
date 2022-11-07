@@ -46,6 +46,8 @@ class CreateDrill extends Component {
   render() {
     return (
       <div className="container-fluid" style={{backgroundColor:"#1e1d24", padding:"50px"}}>
+        <h5>Create a soccer drill by dragging and dropping elements from the left onto the field! Dont forget to fill out its Title, Category, and Description.</h5>
+        <p>NOTE: drills are searchable based on their category so try using a category like attacking or defending and searching for drills that fit the category after submission</p>
         <div class="row">
         <Stage ref="bigStage" id="bigStage" width={1000} height={400} >
           <Layer ref="bigLayer">
@@ -314,6 +316,7 @@ class CreateDrill extends Component {
           </Layer>
         </Stage>
         </div>
+        
         <div className="row g-2" style={{paddingTop: "15px"}}>
           <form style={{ margin: "auto", width: "50%", padding: "10px" }}>
             <input
